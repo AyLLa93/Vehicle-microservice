@@ -1,15 +1,36 @@
-package vehicle.mservice.vehiclemicroservice.Entity.Request;
+package Model;
 
-public class AddVehicleRequest {
+public class Vozilo {
 
+    private int id;
     private String brand;
     private String name;
     private String type;
-    private int productionYear;
+    private int producedYear;
     private String transmission;
     private String color;
-    private int locationID;
     private boolean available;
+
+    public Vozilo() {}
+
+    public Vozilo(int id, String brand, String name, String type, int producedYear, String transmission, String color, boolean available) {
+        this.id = id;
+        this.brand = brand;
+        this.name = name;
+        this.type = type;
+        this.producedYear = producedYear;
+        this.transmission = transmission;
+        this.color = color;
+        this.available = available;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getBrand() {
         return brand;
@@ -35,12 +56,12 @@ public class AddVehicleRequest {
         this.type = type;
     }
 
-    public int getProductionYear() {
-        return productionYear;
+    public int getProducedYear() {
+        return producedYear;
     }
 
-    public void setProductionYear(int productionYear) {
-        this.productionYear = productionYear;
+    public void setProducedYear(int producedYear) {
+        this.producedYear = producedYear;
     }
 
     public String getTransmission() {
@@ -59,14 +80,6 @@ public class AddVehicleRequest {
         this.color = color;
     }
 
-    public int getLocationID() {
-        return locationID;
-    }
-
-    public void setLocationID(int locationID) {
-        this.locationID = locationID;
-    }
-
     public boolean isAvailable() {
         return available;
     }
@@ -74,5 +87,4 @@ public class AddVehicleRequest {
     public void setAvailable(boolean available) {
         this.available = available;
     }
-
 }
