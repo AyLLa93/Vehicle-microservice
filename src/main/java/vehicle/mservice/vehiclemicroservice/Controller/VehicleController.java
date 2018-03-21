@@ -28,14 +28,14 @@ public class VehicleController {
     @RequestMapping(method = RequestMethod.POST)
     public void addVehicle(@RequestBody AddVehicleRequest addVehicleRequest){
         Vehicle vehicle = new Vehicle();
-        vehicle.setBrand(AddVehicleRequest.getBrand());
-        vehicle.setName(AddVehicleRequest.getName());
-        vehicle.setColor(AddVehicleRequest.getColor());
-        vehicle.setProductionYear(AddVehicleRequest.getProductionYear());
-        vehicle.setTransmission(AddVehicleRequest.getTransmission());
-        vehicle.setType(AddVehicleRequest.getType());
-        vehicle.setAvailable(AddVehicleRequest.isAvailable());
-        vehicle.setLocationID(AddVehicleRequest.getLocationID());
+        vehicle.setBrand(addVehicleRequest.getBrand());
+        vehicle.setName(addVehicleRequest.getName());
+        vehicle.setColor(addVehicleRequest.getColor());
+        vehicle.setProductionYear(addVehicleRequest.getProductionYear());
+        vehicle.setTransmission(addVehicleRequest.getTransmission());
+        vehicle.setType(addVehicleRequest.getType());
+        vehicle.setAvailable(addVehicleRequest.isAvailable());
+        vehicle.setLocationID(addVehicleRequest.getLocationID());
         vehicleRepository.save(vehicle);
     }
 }

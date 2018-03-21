@@ -11,7 +11,7 @@ public class AddVehicleRequest {
     private int locationID;
     private boolean available;
 
-    public static String getBrand() {
+    public String getBrand() {
         return brand;
     }
 
@@ -19,7 +19,7 @@ public class AddVehicleRequest {
         this.brand = brand;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
@@ -27,7 +27,7 @@ public class AddVehicleRequest {
         this.name = name;
     }
 
-    public static String getType() {
+    public String getType() {
         return type;
     }
 
@@ -35,7 +35,7 @@ public class AddVehicleRequest {
         this.type = type;
     }
 
-    public static int getProductionYear() {
+    public int getProductionYear() {
         return productionYear;
     }
 
@@ -43,7 +43,7 @@ public class AddVehicleRequest {
         this.productionYear = productionYear;
     }
 
-    public static String getTransmission() {
+    public String getTransmission() {
         return transmission;
     }
 
@@ -51,7 +51,7 @@ public class AddVehicleRequest {
         this.transmission = transmission;
     }
 
-    public static String getColor() {
+    public String getColor() {
         return color;
     }
 
@@ -59,7 +59,7 @@ public class AddVehicleRequest {
         this.color = color;
     }
 
-    public static int getLocationID() {
+    public int getLocationID() {
         return locationID;
     }
 
@@ -67,7 +67,7 @@ public class AddVehicleRequest {
         this.locationID = locationID;
     }
 
-    public static boolean isAvailable() {
+    public boolean isAvailable() {
         return available;
     }
 
